@@ -4,7 +4,7 @@ import { AuthContext } from '../providers/AuthProvider';
 const Signup = () => {
   const { signUpUser } = useContext(AuthContext);
 
-  const handleLoginForm = e => {
+  const handleSignUpForm = e => {
     e.preventDefault();
 
     const signupForm = e.target;
@@ -49,7 +49,7 @@ const Signup = () => {
           </p>
         </div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-          <form onSubmit={handleLoginForm} className="card-body">
+          <form onSubmit={handleSignUpForm} className="card-body">
 
             <div className="form-control">
               <label className="label">
@@ -76,7 +76,7 @@ const Signup = () => {
             </div>
 
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Login</button>
+              <button className="btn btn-primary">Signup</button>
             </div>
           </form>
         </div>
